@@ -2,11 +2,11 @@ import React from 'react';
 import {mount} from 'react-mounter';
 // load Layout and Welcome React components
 
-import App from '../imports/ui/App.jsx';
+import Home from '../imports/ui/layouts/Home.jsx';
 
 FlowRouter.route("/", {
   action() {
-    mount(App, {
+    mount(Home, {
 
     });
   }
