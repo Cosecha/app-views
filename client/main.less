@@ -1,0 +1,95 @@
+body{
+  font-family: "Helvetica";
+  background: #f4f4f7;
+  color: #444;
+	margin: 0px;
+	padding: 0px;
+}
+
+#cosecha-tech{
+	margin: 0px;
+	padding:0px;
+	position: absolute;
+	width: 100%;
+	height: 100%;
+	& > .main-content{
+		& > .page-container{
+			& > .fixed-title{
+				background: #fff;
+				border-bottom: 1px solid #ccc;
+				margin: 0px;
+				padding:0px;
+				height: 60px;
+				& > i{
+					float:left;
+					padding: 15px;
+					cursor: pointer;
+				}
+				& > h1{
+					margin: 0px;
+					padding:15px;
+				}
+
+			}
+			& > .content{
+				padding: 10px;
+			}
+		}
+	}
+
+	& > .flex-tab-bar{
+		position:absolute;
+		right: 0px;
+		top: 0px;
+		float:right;
+		width: 40px;
+		height: 100%;
+		background: #fff;
+		border-left: 1px solid #ccc;
+	}
+
+	& > .side-nav{
+		background-color: #25529f;
+		color: #fff;
+		width: 250px;
+		height: 100%;
+		position:absolute;
+		top:0px;
+		left:-250px;
+		padding:0px;
+		&.active{
+			left:0px;
+		}
+		& > .header{
+			background: #17428e;
+			border-bottom: 1px solid #03245c;
+			min-height: 50px;
+			& > .account-box{
+				& > .info{
+					clear:both;
+					& > .thumb{
+						float:left;
+					}
+					& > .data{
+						& > h4{
+							margin-left: 10px;
+							padding: 0px;
+							margin: 0px;
+						}
+					}
+				}
+			}
+		}
+
+		& > .rooms-list{
+			clear: both;
+			margin-top: 20px;
+			& > .wrapper{
+				margin: 15px;
+				& > ul > li{
+					list-style: none;
+				}
+			}
+		}
+	}
+}
