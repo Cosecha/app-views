@@ -1,5 +1,10 @@
 import React, { Component } from 'react';
 import SideBar from '../components/SideBar.jsx';
+import Tooltip from '../components/Tooltip.jsx';
+import Spotlight from '../components/Spotlight.jsx';
+import UserCardPopover from '../components/UserCardPopover.jsx';
+import FlexTabBar from '../components/FlexTabBar.jsx';
+import ConnectionStatus from '../components/ConnectionStatus.jsx';
 
 export default class Main extends Component {
 
@@ -35,12 +40,13 @@ export default class Main extends Component {
   render() {
     return (
 			<div>
-				<div className="tooltip"></div>
-				<div className="spotlight hidden"></div>
-				<div className="user-card-popover"></div>
+				<Tooltip />
+				<Spotlight />
+				<UserCardPopover />
+
 				<div id="cosecha-tech" className="cosecha-tech">
-					<div className="connection-status"></div>
-					<div role="toolbar" className="flex-tab-bar"></div>
+					<ConnectionStatus />
+					<FlexTabBar />
 
 					<div className="main-content">
 						<div className="page-container">
@@ -54,7 +60,7 @@ export default class Main extends Component {
 					</div>
 
 					<SideBar />
-					
+
 
 				</div>
 			</div>
