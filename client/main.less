@@ -38,7 +38,7 @@ body{
 	}
 
 	& > .flex-tab-bar{
-		position:absolute;
+		position:fixed;
 		right: 0px;
 		top: 0px;
 		float:right;
@@ -90,6 +90,17 @@ body{
 					list-style: none;
 				}
 			}
+		}
+	}
+}
+
+@media screen and (min-width: 780px) {
+
+	#cosecha-tech {
+		left: 250px;
+		& > .main-content > .flex-tab-bar{
+			position: fixed;
+			right: 0px;
 		}
 	}
 }
